@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="5dp"
+        android:background="#9fa8da"
+        android:id="@+id/imageProfil"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.64">
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:text="Native"
+            android:layout_marginTop="80dp"
+            android:layout_marginLeft="30dp"
+            android:textAlignment="center"
+            android:id="@+id/tvnative" />
+
+        <TextView
+            android:text="Learning"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="24dp"
+            android:id="@+id/tvlearning"
+            android:textAlignment="center"
+            android:layout_alignTop="@+id/tvnative" />
+
+        <Spinner
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tvnative"
+            android:layout_marginTop="24dp"
+            android:layout_marginLeft="35dp"
+            android:id="@+id/spNative" />
+
+        <Spinner
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/spNative"
+            android:layout_toEndOf="@+id/spNative"
+            android:id="@+id/spLearning"
+            android:layout_marginLeft="120dp"/>
+
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Yaş"
+            android:textSize="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="40dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/editYas" />
+
+        <TextView
+            android:text="Bölge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/editYas"
+            android:layout_alignEnd="@+id/spLearning"
+            android:layout_marginEnd="16dp"
+            android:id="@+id/tvbolge" />
+
+        <Spinner
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvbolge"
+            android:layout_toEndOf="@+id/tvnative"
+            android:id="@+id/spBolge"
+            android:layout_marginLeft="100dp"/>
+
+        <Spinner
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:id="@+id/spLearn2"
+            android:layout_marginRight="200dp"
+            android:layout_below="@+id/tvlearn2"
+            android:layout_alignEnd="@+id/tvlearning" />
+
+        <TextView
+            android:text="Meslek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tvlearn2"
+            android:layout_marginLeft="300dp"
+            android:id="@+id/tvmeslek"
+            android:layout_alignTop="@+id/tvlearn2" />
+
+        <Spinner
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/spLearn2"
+            android:layout_toEndOf="@+id/tvlearn2"
+            android:id="@+id/spMeslek"
+            android:layout_marginLeft="80dp"/>
+
+        <TextView
+            android:text="Öğreneceği Dil Seviye"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:id="@+id/tvlearn2"
+            android:layout_below="@+id/spBolge"
+            android:layout_alignStart="@+id/editYas" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Ad"
+            android:layout_above="@+id/tvlearning"
+            android:layout_alignStart="@+id/spNative"
+            android:layout_marginBottom="12dp"
+            android:id="@+id/editAd"
+            android:layout_alignEnd="@+id/tvnative" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Soyad"
+            android:layout_alignTop="@+id/editAd"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/editSoyad"
+            android:layout_alignStart="@+id/spBolge" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

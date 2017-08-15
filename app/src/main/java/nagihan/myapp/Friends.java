@@ -1,0 +1,12 @@
+package nagihan.myapp;
+
+import android.support.v7.app.AppCompatActivity;
+
+
+public class Friends extends AppCompatActivity {
+
+
+
+}
+
+
